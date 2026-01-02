@@ -1,8 +1,7 @@
 from ray import serve
 
 @serve.deployment(
-    name="hello_service",
-    route_prefix="/hello",
+    name="hello_service"
 )
 class HelloService:
     def __init__(self):
